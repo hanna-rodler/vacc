@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+         rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+         rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="../assets/style/styles.css">
+   <title>Impftermin Verwaltung</title>
+</head>
+<body class="mt-4">
+   <header>
+      <div class="container-lg">
+         <h1 class="mb-3">Österreich impft!</h1>
+      </div>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="../assets/img/together_left.jpeg" class="d-block vw-100"
+                    alt="Eine Reihe von Leuten die das Pflaster ihrer Impfung herzeigen.">
+            </div>
+            <div class="carousel-item">
+               <img src="../assets/img/together_right.jpeg" class="d-block vw-100"
+                    alt="Eine Reihe von Leuten die das Pflaster ihrer Impfung herzeigen.">
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main class="container-lg">
+      <div class="row my-4">
+         <div class="col-md-2 col-sm-3 col-12">
+            <button class="btn btn-primary m-sm-0 my-2">Bearbeiten</button>
+         </div>
+         <div class="col-md-2 col-sm-3 col-12 m-sm-0 my-2">
+            <button class="btn btn-primary">Verabreicht</button>
+         </div>
+         <div class="col-md-2 col-sm-3 col-12 m-sm-0 my-2">
+            <button class="btn  btn-delete">Löschen</button>
+         </div>
+         <div class="col-md-6 col-sm-3 col-12 d-flex justify-content-end m-sm-0 my-2 order-first order-sm-last">
+            <a href="../login.html" class="btn btn-primary">Logout</a>
+         </div>
+      </div>
+
+      <h2>Verwaltung Impftermine</h2>
+      <!-- Tabelle, um Impftermine zu verwalten mit Datum, Uhrzeit, Ort, Impfstoff, Anzahl der Anmeldungen, Verwalten-->
+      <table class="table table-striped">
+         <thead>
+         <tr>
+            <th scope="col">Datum</th>
+            <th scope="col">Uhrzeit</th>
+            <th scope="col">Ort</th>
+            <th scope="col">Impftsoff</th>
+            <th scope="col">Anmeldungen</th>
+            <th scope="col">Verwalten</th>
+            <th scope="col">Auswählen</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr>
+            <td scope="row">Montag, 13. 12. 2021</td>
+            <td>13:00</td>
+            <td>Linz</td>
+            <td>BioNTech / Pfizer</td>
+            <td>6</td>
+            <td><a href="impftermin-detailansicht.html"><a href="impftermin-detailansicht.html"><span
+                  class="material-icons">edit</span></a></a></td>
+            <td>
+               <input type="checkbox" id="13122021-1300" name="mo13122021-1300" value="Mo-13122021-1300">
+            </td>
+         </tr>
+         <tr>
+            <td scope="row">Montag, 13. 12. 2021</td>
+            <td>13:15</td>
+            <td>Linz</td>
+            <td>BioNTech / Pfizer</td>
+            <td>8</td>
+            <td><a href="impftermin-detailansicht.html"><a href="impftermin-detailansicht.html"><span
+                  class="material-icons">edit</span></a></a></td>
+            <td>
+               <input type="checkbox" id="13122021-1315" name="mo13122021-1315" value="Mo-13122021-1315">
+            </td>
+         </tr>
+         <tr>
+            <td scope="row">Montag, 13. 12. 2021</td>
+            <td>13:30</td>
+            <td>Linz</td>
+            <td>BioNTech / Pfizer</td>
+            <td>6</td>
+            <td><a href="impftermin-detailansicht.html"><span class="material-icons">edit</span></a></td>
+            <td>
+               <input type="checkbox" id="13122021-1330" name="mo13122021-1330" value="Mo-13122021-1330">
+            </td>
+         </tr>
+         <tr>
+            <td scope="row">Montag, 13. 12. 2021</td>
+            <td>13:45</td>
+            <td>Linz</td>
+            <td>BioNTech / Pfizer</td>
+            <td>7</td>
+            <td><a href="impftermin-detailansicht.html"><span class="material-icons">edit</span></a></td>
+            <td>
+               <input type="checkbox" id="13122021-1345" name="mo13122021-1345" value="Mo-13122021-1345">
+            </td>
+         </tr>
+         <tr>
+            <td scope="row">Dienstag, 14. 12. 2021</td>
+            <td>09:00</td>
+            <td>Leonding</td>
+            <td>Moderna</td>
+            <td>2</td>
+            <td><a href="impftermin-detailansicht.html"><span class="material-icons">edit</span></a></td>
+            <td>
+               <input type="checkbox" id="14122021-0900" name="mo14122021-0900" value="Mo-14122021-0900">
+            </td>
+         </tr>
+         <tr>
+            <td scope="row">Dienstag, 14. 12. 2021</td>
+            <td>09:15</td>
+            <td>Leonding</td>
+            <td>Moderna</td>
+            <td>3</td>
+            <td><a href="impftermin-detailansicht.html"><span class="material-icons">edit</span></a></td>
+            <td>
+               <input type="checkbox" id="14122021-0915" name="mo14122021-0915" value="Mo-14122021-0915">
+            </td>
+         </tr>
+         <tr>
+            <td scope="row">Dienstag, 14. 12. 2021</td>
+            <td>09:30</td>
+            <td>Leonding</td>
+            <td>Moderna</td>
+            <td>5</td>
+            <td><a href="impftermin-detailansicht.html"><span class="material-icons">edit</span></a></td>
+            <td>
+               <input type="checkbox" id="14122021-0930" name="mo14122021-0930" value="Mo-14122021-0930">
+            </td>
+         </tr>
+         </tbody>
+      </table>
+
+
+      <footer class="mt-4">
+         <nav class="navbar navbar-expand-sm justify-content-center">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link" href="anmeldung-impftermin.html">Impftermin buchen</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="../login.html">Administrator Login
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Impressum</a>
+               </li>
+            </ul>
+         </nav>
+      </footer>
+   </main>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+           crossorigin="anonymous"></script>
+</body>
+</html>
