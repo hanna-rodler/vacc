@@ -1,5 +1,5 @@
 ## Austria Vaccinates
-Assignment for parts of a responsive frontend website "Austria vaccinates" using bootstrap.
+Assignment for parts of a website "Austria vaccinates" using bootstrap.
 Some funcitonality added via js (modules and oop) for the admin dashboard.<br>
 (The Accordion,the navigation on the bottom and three animations were mandatory.)
 
