@@ -1,0 +1,247 @@
+{
+  "vaccAppointments": [
+    {
+      "id": 1,
+      "totalPlaces": 6,
+      "vaccine": "BioNTech/Pfizer",
+      "date": "03.01.2022",
+      "time_from": "13:00",
+      "time_to": "16:15",
+      "address": "Regenbogenweg 42",
+      "zipCode": 3377,
+      "city": "Gipfelstraße",
+      "state": "Tirol",
+      "persons": [
+      ]
+    },
+    {
+      "id": 2,
+      "totalPlaces": 6,
+      "vaccine": "Johnson",
+      "date": "05.01.2022",
+      "time_from": "8:00",
+      "time_to": "8:15",
+      "address": "Himmlerstr. 16",
+      "zipCode": 4020,
+      "city": "Linz",
+      "state": "Oberösterreich",
+      "persons": [
+        {
+          "firstName": "Hanna",
+          "lastName": "Rodler",
+          "svnr": 3110945565
+        },
+        {
+          "firstName": "Hannah",
+          "lastName": "Zauner",
+          "svnr": 3010942565
+        },
+        {
+          "firstName": "Anna",
+          "lastName": "Sollner",
+          "svnr": 3110940565
+        },
+        {
+          "firstName": "Frederike",
+          "lastName": "Liebig",
+          "svnr": 3110942486
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "totalPlaces": 6,
+      "vaccine": "Johnson",
+      "date": "05.01.2022",
+      "time_from": "8:15",
+      "time_to": "8:30",
+      "address": "Himmlerstr. 16",
+      "zipCode": 4020,
+      "city": "Linz",
+      "state": "Oberösterreich",
+      "persons": [
+        {
+          "firstName": "Lisa",
+          "lastName": "Meyer",
+          "svnr": 3109010101
+        },
+        {
+          "firstName": "Lotte",
+          "lastName": "Zauner",
+          "svnr": 3109010102
+        },
+        {
+          "firstName": "Tina",
+          "lastName": "Tristen",
+          "svnr": 3109010103
+        },
+        {
+          "firstName": "Hannelore",
+          "lastName": "Liebig",
+          "svnr": 3109010104
+        },
+        {
+          "firstName": "Ludwig",
+          "lastName": "Stern",
+          "svnr": 3109010105
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "totalPlaces": 8,
+      "vaccine": "BioNTech/Pfizer",
+      "date": "05.01.2022",
+      "time_from": "8:00",
+      "time_to": "8:15",
+      "address": "Maierweg 8",
+      "zipCode": 4060,
+      "city": "Leonding",
+      "state": "Oberösterreich",
+      "persons": [
+        {
+          "firstName": "Lisa",
+          "lastName": "Ritt",
+          "svnr": 3109010301
+        },
+        {
+          "firstName": "Lotte",
+          "lastName": "Gschwind",
+          "svnr": 3109010302
+        },
+        {
+          "firstName": "Henrik",
+          "lastName": "Hansen",
+          "svnr": 3109010303
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "totalPlaces": 5,
+      "vaccine": "Johnson",
+      "date": "05.01.2022",
+      "time_from": "8:15",
+      "time_to": "8:30",
+      "address": "Maierweg 8",
+      "zipCode": 4060,
+      "city": "Leonding",
+      "state": "Oberösterreich",
+      "persons": [
+        {
+          "firstName": "Christina",
+          "lastName": "Meyerhofer",
+          "svnr": 3109010401
+        },
+        {
+          "firstName": "Lisbeth",
+          "lastName": "Trainer",
+          "svnr": 3109010402
+        },
+        {
+          "firstName": "Herbert",
+          "lastName": "Gschwind",
+          "svnr": 3109010403
+        },
+        {
+          "firstName": "Anette",
+          "lastName": "Wartner",
+          "svnr": 3109010404
+        },
+        {
+          "firstName": "Anne",
+          "lastName": "Windner",
+          "svnr": 3109010405
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "totalPlaces": 6,
+      "vaccine": "Moderna",
+      "date": "05.01.2022",
+      "time_from": "19:15",
+      "time_to": "19:30",
+      "address": "Straußenweg 4",
+      "zipCode": 3300,
+      "city": "Amstetten",
+      "state": "Niederösterreich",
+      "persons": [
+        {
+          "firstName": "Lisa",
+          "lastName": "Meyer",
+          "svnr": 3109010501
+        },
+        {
+          "firstName": "Isabella",
+          "lastName": "Zauner",
+          "svnr": 3109010502
+        },
+        {
+          "firstName": "Tina",
+          "lastName": "Tristen",
+          "svnr": 3109010503
+        },
+        {
+          "firstName": "Hannelore",
+          "lastName": "Liebig",
+          "svnr": 3109010504
+        },
+        {
+          "firstName": "Wolfgang",
+          "lastName": "Stern",
+          "svnr": 3109010505
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "totalPlaces": 5,
+      "vaccine": "Moderna",
+      "date": "07.01.2022",
+      "time_from": "15:45",
+      "time_to": "16:00",
+      "address": "Straußenweg 4",
+      "zipCode": 3300,
+      "city": "Amstetten",
+      "state": "Niederösterreich",
+      "persons": [
+        {
+          "firstName": "Johann",
+          "lastName": "Strauß",
+          "svnr": 3109010601
+        },
+        {
+          "firstName": "Karl",
+          "lastName": "Lanner",
+          "svnr": 3109010602
+        },
+        {
+          "firstName": "Michael",
+          "lastName": "Ziehrer",
+          "svnr": 3109010603
+        },
+        {
+          "firstName": "Franz",
+          "lastName": "Schubert",
+          "svnr": 3109010604
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "totalPlaces": 6,
+      "vaccine": "Moderna",
+      "date": "07.01.2022",
+      "time_from": "16:00",
+      "time_to": "16:15",
+      "address": "Straußenweg 4",
+      "zipCode": 3300,
+      "city": "Amstetten",
+      "state": "Niederösterreich",
+      "persons": [
+
+      ]
+    }
+  ]
+}
