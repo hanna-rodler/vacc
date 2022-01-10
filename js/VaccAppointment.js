@@ -108,7 +108,7 @@ export default class VaccAppointment {
                     <td>${this.#date}</td>
                     <td>${this.#time_from}</td>
                     <td>${this.#time_to}</td>
-                    <td>${this.#address}<br> ${this.#city}, ${this.#state}</td>
+                    <td>${this.#address}<br> ${this.#zipCode} ${this.#city},<br>${this.#state}</td>
                     <td>${this.#vaccine}</td>
                     <td class="text-center">${this.#registeredNum}</td>
                     <td class="text-center">${this.#availableNum}</td>
@@ -149,13 +149,17 @@ export default class VaccAppointment {
     $("#detailView").removeClass("hidden");
     $("#admin").addClass("hidden");
     $("#detailHeader").empty();
+    $("#detailTable").next().remove();
     let infos = `<h2>Impftermin am <span id="vaccDate">${this.#date}</span></h2>` +
-      `<div><span class="material-icons-outlined">schedule</span>` +
-      `${this.#time_from} Uhr - ${this.#time_to} Uhr</div>` +
-      `<div></div><span class="material-icons-outlined">place</span>${this.#address} von ${this.#city} bis ${this.#state}</div>`;
+      `<div class="mb-2 mt-3"><span class="material-icons-outlined">schedule</span>` +
+      ` ${this.#time_from} Uhr - ${this.#time_to} Uhr</div>` +
+      `<div><span class="material-icons-outlined">place</span>${this.#address}, ${this.#zipCode} ${this.#city},  ${this.#state}</div>`;
 
     $("#detailHeader").append(infos);
     this.#personList.printDetails();
+
+    let maxPlaces = `<div class="mt-3">Anmeldungen: ${this.#registeredNum}/${this.#totalPlaces}</div>`;
+    $("#detailTable").after(maxPlaces);
 
     $("#cancelVacc").on("click", () => {
       $("#detailView").addClass("hidden");
