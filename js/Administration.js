@@ -204,11 +204,11 @@ export default class Administration {
 
       if (time_from === "" || time_to === "") {
         if (time_from === "") {
-          errorMessage("#time_from", "Bitte Uhrzeit eingeben");
+          showErrorMessage("#time_from");
           validate[1] = false;
         }
         if (time_to === "") {
-          errorMessage("#time_to", "Bitte Uhrzeit eingeben");
+          showErrorMessage("#time_to");
           validate[1] = false;
         }
       } else if (endt <= stt) {
