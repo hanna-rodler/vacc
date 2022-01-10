@@ -75,7 +75,7 @@ export default class Administration {
    * Loads data (Vaccine Appointments) from JSON file.
    */
   [loadFromJSON]() {
-    fetch("json/vaccAppointments.json").then((response) => {
+    fetch("../json/vaccAppointments.json").then((response) => {
       return response.json();
     }).then(data => {
       for (let apptm of data.vaccAppointments) {
