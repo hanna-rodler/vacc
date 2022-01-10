@@ -38,7 +38,7 @@ export default class Administration {
     </div>
     <div
       class="col-6 d-flex justify-content-end m-sm-0 my-2">
-      <a href="#" class="btn btn-primary">Logout</a>
+      <a href="login.html" class="btn btn-primary">Logout</a>
     </div>
   </div>
     <h2>Verwaltung Impftermine</h2></div>`;
@@ -69,6 +69,11 @@ export default class Administration {
       this[loadVaccForm]();
     });
 
+    console.log("Du siehst dir mein Projekt genauer an?\nGib" +
+      " \'administration.register(id," +
+      " \"firstName\", \"lastName\", SVNr)\' ein, um die Registrierung von Personen zu" +
+      " simulieren.\nHinweis: Die id findest du immer neben \"Impftermin\", z.B." +
+      " \"Impftermin 4\" → id = 4");
   }
 
   /**
@@ -391,26 +396,25 @@ export default class Administration {
 
     if (person.svnr < 1000000000 || person.svnr >= 10000000000) {
       console.error("Ungültige Sozialversicherungsnummer!");
-    }else
-      if (!this.#apptmList.apptmExists(apptmId)) {
-        console.error("Diesen Termin gibt es nicht.");
-      } else if (apptm.getAvailable() === 0) {
-        console
-        .error(
-          "Zu viele Anmeldungen, bitte nehmen Sie einen anderen Termin"
-        );
+    } else if (!this.#apptmList.apptmExists(apptmId)) {
+      console.error("Diesen Termin gibt es nicht.");
+    } else if (apptm.getAvailable() === 0) {
+      console
+      .error(
+        "Zu viele Anmeldungen, bitte nehmen Sie einen anderen Termin"
+      );
+    } else {
+      let personList = apptm.getPersonList();
+
+      if (personList.existsSVNR(person.svnr)) {
+        console.error("Sie haben sich zu diesem Termin schon angemeldet.");
       } else {
-        let personList = apptm.getPersonList();
-
-        if (personList.existsSVNR(person.svnr)) {
-          console.error("Sie haben sich zu diesem Termin schon angemeldet.");
-        } else {
-          personList.addPerson(person);
+        personList.addPerson(person);
 
 
-          this.#apptmList.print(person);
-          console.info(apptm.getMessage());
-        }
+        this.#apptmList.print(person);
+        console.info(apptm.getMessage());
       }
     }
+  }
 }
